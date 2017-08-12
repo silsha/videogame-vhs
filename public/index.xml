@@ -6,10 +6,19 @@
     <description>Recent content on Game Videos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jan 1994 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 1999 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hot Newz 64 An Insiders Guide To N64</title>
+      <link>http://example.org/video/1999/nintendo/hot-newz-64-an-insiders-guide-to-n64/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/video/1999/nintendo/hot-newz-64-an-insiders-guide-to-n64/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Super Nintendo SNES Promotional VHS</title>
@@ -17,6 +26,25 @@
       <pubDate>Sat, 01 Jan 1994 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/video/1994/nintendo/super-nintendo-snes-promotional-vhs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power Of Choice Nintendo Demonstrator Program</title>
+      <link>http://example.org/video/1991/nintendo/power-of-choice-nintendo-demonstrator-program/</link>
+      <pubDate>Fri, 01 Nov 1991 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/video/1991/nintendo/power-of-choice-nintendo-demonstrator-program/</guid>
+      <description>This is one of a series of 3 VHS tapes I bought from a dealer who specializes in rare toy and video games industry items.
+These tapes were given to Nintendo employees and retailers to promote Nintendo&amp;rsquo;s latest products during the early and mid-90&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>derp</title>
+      <link>http://example.org/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/search/</guid>
       <description></description>
     </item>
     

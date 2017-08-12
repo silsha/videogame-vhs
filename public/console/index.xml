@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Nintendo 64</title>
+      <link>http://example.org/console/nintendo-64/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/console/nintendo-64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Super Nintendo</title>
       <link>http://example.org/console/super-nintendo/</link>
       <pubDate>Sat, 01 Jan 1994 00:00:00 +0000</pubDate>

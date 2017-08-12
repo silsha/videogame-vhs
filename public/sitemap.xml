@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/video/1999/nintendo/hot-newz-64-an-insiders-guide-to-n64/</loc>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/video/1994/nintendo/super-nintendo-snes-promotional-vhs/</loc>
     <lastmod>1994-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/video/1991/nintendo/power-of-choice-nintendo-demonstrator-program/</loc>
+    <lastmod>1991-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -18,14 +28,32 @@
   </url>
   
   <url>
+    <loc>http://example.org/language/english/</loc>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
-    <lastmod>1994-01-01T00:00:00+00:00</lastmod>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/language/</loc>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.org/company/nintendo/</loc>
-    <lastmod>1994-01-01T00:00:00+00:00</lastmod>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/console/nintendo-64/</loc>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -37,8 +65,12 @@
   
   <url>
     <loc>http://example.org/video/</loc>
-    <lastmod>1994-01-01T00:00:00+00:00</lastmod>
+    <lastmod>1999-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/search/</loc>
   </url>
   
 </urlset>
