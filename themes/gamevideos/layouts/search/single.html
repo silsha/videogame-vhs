@@ -1,0 +1,38 @@
+{{ define "customhead" }}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.0.2/dist/instantsearch.min.css">
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.0.2/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.0.2/dist/instantsearch-theme-algolia.min.css">
+<script src="{{ .Site.BaseURL }}js/search.js"></script>
+{{ end }}
+
+{{ define "main" }}
+<header class="row">
+	<div class="searchbox-container">
+		<div class="input-group">
+			<input type="text" class="form-control" id="q" />
+		</div>
+	</div>
+</header>
+<div class="container">
+<div class="row">
+
+		<div class="col-sm-3">
+			<ul class="nav nav-list">
+				<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+				<li class="separator"></li>
+			</ul>
+			<h5><i class="fa fa-chevron-right"></i> Console</h5>
+			<div id="console"></div>
+			<h5><i class="fa fa-chevron-right"></i> Language</h5>
+			<div id="language"></div>
+		</div>
+		<div class="col-sm-9">
+			<div id="stats" class="text-right text-muted"></div>
+			<hr />
+			<div id="hits"></div>
+			<div id="pagination" class="text-center"></div>
+		</div>
+
+</div>
+</div>
+{{ end }}
