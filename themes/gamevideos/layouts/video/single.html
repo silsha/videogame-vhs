@@ -64,7 +64,7 @@
 
   <video id="main-video" style="display: none;" class="video-js" controls preload="auto" width="640" height="480"></video>
   <noscript><iframe src="https://archive.org/embed/{{ .Params.archiveid}}" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></noscript>
-  <script src="http://vjs.zencdn.net/6.2.4/video.js"></script>
+  <script src="{{ .Site.BaseURL }}js/video.min.js"></script>
   <script>
     var req;
     var video = document.querySelector('#main-video');
