@@ -61,7 +61,65 @@
     <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> by {{ .Params.company | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} in {{ partial "meta-terms.html" . }}{{ end }}</p>
   </header>
-  <iframe src="https://archive.org/embed/{{ .Params.archiveid}}" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+  <video id="main-video" class="video-js" controls preload="auto" width="640" height="480"></video>
+  <p id="flash-fallback"><iframe src="https://archive.org/embed/{{ .Params.archiveid}}" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></p>
+  <script src="http://vjs.zencdn.net/6.2.4/video.js"></script>
+  <script>
+    var req;
+
+    function load_video() {
+      if(req.readyState !== XMLHttpRequest.DONE) {
+        return;
+      }
+
+      if(req.status != 200) {
+        // rip. Use archive.org embedded flash player.
+        document.querySelector('#main-video').setAttribute('style', 'display: none;');
+        document.querySelector('#flash-fallback').setAttribute('style', 'display: block;');
+        return;
+      }
+
+      var response = JSON.parse(req.responseText);
+      var have_thumb = false;
+      var content = response['files'].filter(function(x) {
+        if(x['format'] === 'Thumbnail') {
+          if(have_thumb) return;
+          have_thumb = true;
+        }
+
+        return ['Thumbnail', 'Ogg Video', 'h.264'].includes(x['format']);
+      });
+
+      var video = document.querySelector('#main-video');
+      var dl_path = 'https://archive.org/download/{{ .Params.archiveid}}/';
+
+      content.forEach(function(source) {
+        if(source.format === 'Thumbnail') {
+          video.setAttribute('poster', dl_path + source.name);
+          return;
+        }
+
+        var source_tag = document.createElement('source');
+        source_tag.setAttribute('src', dl_path + source.name);
+        source_tag.setAttribute('type', `video/${source.format === 'h.264' ? 'h264' : 'ogg'}`);
+        video.appendChild(source_tag);
+      });
+
+      videojs('#main-video');
+    }
+
+    function load_metadata() {
+      document.querySelector('#flash-fallback').setAttribute('style', 'display: none;');
+      req = new XMLHttpRequest();
+      req.onreadystatechange = load_video;
+      req.open('GET', 'https://archive.org/metadata/{{ .Params.archiveid}}', true);
+      req.send();
+    }
+
+    load_metadata();
+  </script>
+
   {{ .Content }}
 
   {{ if .IsTranslated }}
