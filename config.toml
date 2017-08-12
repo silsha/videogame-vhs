@@ -1,0 +1,12 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Game Videos"
+theme = "gamevideos"
+
+[permalinks]
+  video = "/:section/:year/:slug/:title/"
+
+[taxonomies]
+  console = "console"
+  company = "company"
+  language = "language"
