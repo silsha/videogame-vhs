@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<html>
+<head>
+	<link rel="canonical" href="{{ .Permalink }}">
+	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+	
+	<link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+</head>
+<body>
+
+	<div class="head-menu">
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="{{ .Site.BaseURL | absLangURL }}">Video Game VHS</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item {{ if .IsHome }}active{{ end }}">
+						<a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}">Home <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0" action="/search/">
+					<input id="aa-search" class="form-control mr-sm-2" type="text" placeholder="Search" name="q">
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</div class="head-menu">
+
+	<main class="container mt-3">

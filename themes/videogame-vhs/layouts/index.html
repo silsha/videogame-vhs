@@ -1,0 +1,28 @@
+{{ partial "header" . }}
+
+{{ range where .Data.Pages "Section" "video" }}
+<div class="latest-item">
+	<a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+	<div class="row">
+		<div class="col-md-2">
+			<img class="img-responsive" src="https://archive.org/services/img/{{ .Params.archiveid}}">
+		</div>
+		<div class="col-md-10">
+			<div class="latest-badges">
+				<span class="badge badge-success">{{ .Params.company }}</span>
+				{{ range .Params.console }}
+					<span class="badge badge-primary">{{.}}</span>
+				{{ end }}
+				<span class="badge badge-warning">{{ .Params.language }}</span>
+			</div>
+			<div class="latest-meta">
+				{{ $dateFormat := default "2006" (index .Site.Params "date_format") }}
+				<span><time>{{ .Date.Format $dateFormat }}</time> by {{ .Params.company }}</span>
+			</div>
+		</div>
+	</div>
+	<hr>
+</div>
+{{ end }}
+
+{{ partial "footer" . }}

@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Game Videos"
-theme = "gamevideos"
+title = "Videogame VHS"
+theme = "videogame-vhs"
 
 [permalinks]
   video = "/:section/:year/:slug/:title/"
