@@ -1,0 +1,17 @@
+{
+  "name": "gamevideos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "algoliasearch": "^3.24.3",
+    "string": "^3.3.3",
+    "toml": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
