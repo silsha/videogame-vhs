@@ -1,28 +1,29 @@
-{{ partial "header" . }}
+{{ partial "header" . }} 
 
-{{ range where .Data.Pages "Section" "video" }}
-<div class="latest-item">
-	<a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
-	<div class="row">
-		<div class="col-md-2">
-			<img class="img-responsive" src="https://archive.org/services/img/{{ .Params.archiveid}}">
-		</div>
-		<div class="col-md-10">
-			<div class="latest-badges">
-				<span class="badge badge-success">{{ .Params.company }}</span>
-				{{ range .Params.console }}
-					<span class="badge badge-primary">{{.}}</span>
-				{{ end }}
-				<span class="badge badge-warning">{{ .Params.language }}</span>
-			</div>
-			<div class="latest-meta">
-				{{ $dateFormat := default "2006" (index .Site.Params "date_format") }}
-				<span><time>{{ .Date.Format $dateFormat }}</time> by {{ .Params.company }}</span>
-			</div>
+
+<header class="row">
+	<div class="searchbox-container" style="width: 100%; max-width: 100%;">
+		<div class="input-group" style="width: 100%">
+			<input type="text" class="form-control" id="q" style="width: 100%">
 		</div>
 	</div>
-	<hr>
-</div>
-{{ end }}
+</header>
+<div class="container">
+	<div class="row">
 
+		<div class="col-sm-3">
+			<h5><i class="fa fa-chevron-right"></i> Console</h5>
+			<div id="console"></div>
+			<h5><i class="fa fa-chevron-right"></i> Language</h5>
+			<div id="language"></div>
+		</div>
+		<div class="col-sm-9">
+			<div id="stats" class="text-right text-muted"></div>
+			<hr />
+			<div id="hits"></div>
+			<div id="pagination" class="text-center"></div>
+		</div>
+
+	</div>
+</div>
 {{ partial "footer" . }}

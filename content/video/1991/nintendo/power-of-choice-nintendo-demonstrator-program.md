@@ -5,6 +5,7 @@ company = "Nintendo"
 slug = "Nintendo"
 archiveid = "power-of-choice-nintendo-demonstrator-program"
 language = "English"
+console = ["NES", "Gameboy"]
 +++
 
 This is one of a series of 3 VHS tapes I bought from a dealer who specializes in rare toy and video games industry items.

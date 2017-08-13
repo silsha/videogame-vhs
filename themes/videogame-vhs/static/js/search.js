@@ -20,16 +20,17 @@ if ($('#q').length >= 1) {
   );
 
   var hitTemplate =
-    '<a href="{{href}}"><div class="hit media mb-2">' +
+    '<div class="hit media mb-2">' +
       '<div class="media-left col-md-3"><img class="img-responsive" src="{{thumbnail}}">' +
         '<div class="media-object" style="background-image: url(\'{{image}}\');"></div>' +
       '</div>' +
       '<div class="media-body col-md-9">' +
-        '<h4 class="media-heading">{{{_highlightResult.title.value}}}</h4>' +
-        '<p class="year">{{year}}</p><p class="console">{{#console}}<span class="badge badge-default">{{.}}</span> {{/console}}</p>' +
+        '<a href="{{href}}"><h4 class="media-heading">{{{_highlightResult.title.value}}}</h4></a>' +
+        '<span class="badge badge-success">{{company}}</span> ' +
+        '{{#console}}<span class="badge badge-primary">{{.}}</span> {{/console}} ' +
         '<p class="year">{{content}}</p>' +
       '</div>' +
-    '</div></a>';
+    '</div>';
 
   var noResultsTemplate =
     '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';

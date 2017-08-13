@@ -78,6 +78,7 @@ module.exports = function(grunt) {
             pageIndex = {
                 title: frontMatter.title,
                 console: frontMatter.console,
+                company: frontMatter.company,
                 href: href,
                 objectID: MD5(href),
                 archiveid: frontMatter.archiveid,
