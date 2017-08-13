@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "algoliasearch": "^3.24.3",
+    "grunt": "^1.0.1",
     "string": "^3.3.3",
     "toml": "^2.3.2"
   },
