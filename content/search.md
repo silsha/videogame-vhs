@@ -1,5 +1,5 @@
 +++
-title = "derp"
+title = "Search"
 type = "search"
 layout = "single"
 +++
