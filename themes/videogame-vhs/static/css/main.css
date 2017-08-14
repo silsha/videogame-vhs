@@ -73,3 +73,20 @@ header.row {
 .media-body .year {
   margin-top: .5rem;
 }
+
+
+.badge-primary, .badge-success  {
+  background-color: transparent !important;
+  text-transform: uppercase;
+  font-weight: 70;
+  padding: 0;
+  margin-right: .5rem;
+}
+
+.badge-primary  {
+  color: #0275d8;
+}
+
+.badge-success {
+  color: #5cb85c;
+}
