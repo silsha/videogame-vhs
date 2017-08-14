@@ -91,7 +91,7 @@ if ($('#q').length >= 1) {
       operator: 'or',
       limit: 10,
       cssClasses: {
-        list: 'nav nav-list',
+        list: 'nav nav-list nav-block',
         count: 'badge pull-right',
         active: 'active'
       }
