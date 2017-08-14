@@ -1,4 +1,4 @@
-baseURL = "https://vhs.silsha.me"
+baseURL = "https://vhs.silsha.me/"
 languageCode = "en-us"
 title = "Videogame VHS"
 theme = "videogame-vhs"
