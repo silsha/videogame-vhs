@@ -1,4 +1,4 @@
-# videogame-vhs
+# videogame-vhs [ ![Codeship Status for silsha/videogame-vhs](https://app.codeship.com/projects/688f9fa0-6232-0135-d48c-76c7a8899292/status?branch=master)](https://app.codeship.com/projects/239730)
 A curated list of old video game VHS, ads and stuff.
 
 ## Build Instructions
