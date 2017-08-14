@@ -1,0 +1,75 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.ais-search-box { max-width: 100%; margin-bottom: 10px; }
+.nav-block { display: block; }
+
+
+.ais-search-box--input {
+  /* Stop Bootstrap from messing with Algolia's design */
+  border-radius: 4px !important;
+}
+.ais-hits--item {
+  margin-bottom: 1rem;
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 100%;
+}
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-top: none;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #B2D7FF;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+.branding {
+	border-top: 1px solid #333;
+}
+.branding img {
+	height: 15px;
+}
+
+em {
+    background-color: #eef6fd;
+}
+
+.media-heading {
+  font-weight: 700;
+}
+
+#main-title {
+  font-size: 4rem;
+  font-weight: 200;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+header.row {
+  margin-bottom: 2rem;
+}
+
+#console, #language {
+  margin: 1rem 0;
+}
+
+.media-body .year {
+  margin-top: .5rem;
+}
