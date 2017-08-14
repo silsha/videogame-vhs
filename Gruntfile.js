@@ -31,14 +31,16 @@ module.exports = function(grunt) {
 
             return pagesIndex;
         };
-        index.addObjects(indexPages(), function(err, content) {
-            console.log(content);
-          index.waitTask(content.taskID, function(err) {
-            if (!err) {
-              console.log('object ' + content.objectID + ' indexed');
-              done();
-            }
-          });
+        index.clearIndex(function(err, content) {
+            index.addObjects(indexPages(), function(err, content) {
+                console.log(content);
+              index.waitTask(content.taskID, function(err) {
+                if (!err) {
+                  console.log('object ' + content.objectID + ' indexed');
+                  done();
+                }
+              });
+            });
         });
 
     });
