@@ -70,6 +70,20 @@ if ($('#q').length >= 1) {
     })
   );
 
+    search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#company',
+      attributeName: 'company',
+      operator: 'or',
+      limit: 10,
+      cssClasses: {
+        list: 'nav nav-list nav-block',
+        count: 'badge pull-right',
+        active: 'active'
+      }
+    })
+  );
+
   search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#language',
