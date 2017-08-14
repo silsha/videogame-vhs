@@ -75,7 +75,7 @@ header.row {
 }
 
 
-.badge-primary, .badge-success  {
+.badge-primary, .badge-success, .badge-warning  {
   background-color: transparent !important;
   text-transform: uppercase;
   font-weight: 70;
@@ -89,4 +89,8 @@ header.row {
 
 .badge-success {
   color: #5cb85c;
+}
+
+.badge-warning {
+  color: #f0ad4e;
 }
