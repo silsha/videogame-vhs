@@ -26,8 +26,9 @@ if ($('#q').length >= 1) {
       '</div>' +
       '<div class="media-body col-md-9 offset-md-2 offset-lg-1">' +
         '<a href="{{href}}"><h4 class="media-heading">{{{_highlightResult.title.value}}}</h4></a>' +
-        '<span class="badge badge-success">{{company}}</span> ' +
-        '{{#console}}<span class="badge badge-warning">{{.}}</span> {{/console}} ' +
+        '<span class="badge badge-primary"><i class="fa fa-flag"></i> {{language}}</span> ' +
+        '<span class="badge badge-success"><i class="fa fa-building"></i> {{company}}</span> ' +
+        '{{#console}}<span class="badge badge-warning"><i class="fa fa-gamepad"></i> {{.}}</span> {{/console}} ' +
         '<p class="year">{{{_highlightResult.content.value}}}</p>' +
       '</div>' +
     '</div>';
