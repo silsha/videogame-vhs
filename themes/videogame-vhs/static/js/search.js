@@ -21,7 +21,7 @@ if ($('#q').length >= 1) {
 
   var hitTemplate =
     '<div class="hit media mb-2">' +
-      '<div class="media-left col-md-3"><img class="img-responsive" src="{{thumbnail}}">' +
+      '<div class="media-left col-md-3"><a href="{{href}}"><img class="img-responsive" src="{{thumbnail}}"></a>' +
         '<div class="media-object" style="background-image: url(\'{{image}}\');"></div>' +
       '</div>' +
       '<div class="media-body col-md-9">' +

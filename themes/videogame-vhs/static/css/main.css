@@ -51,7 +51,7 @@ em {
 }
 
 .media-heading {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #main-title {
@@ -60,6 +60,11 @@ em {
   width: 100%;
   margin: 2rem auto;
   text-align: center;
+}
+
+#main-title a, #main-title a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 header.row {
