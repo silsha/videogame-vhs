@@ -24,7 +24,7 @@ if ($('#q').length >= 1) {
       '<div class="media-left col-md-3"><a href="{{href}}"><img class="img-responsive" src="{{thumbnail}}"></a>' +
         '<div class="media-object" style="background-image: url(\'{{image}}\');"></div>' +
       '</div>' +
-      '<div class="media-body col-md-9">' +
+      '<div class="media-body col-md-9 offset-md-2 offset-lg-1">' +
         '<a href="{{href}}"><h4 class="media-heading">{{{_highlightResult.title.value}}}</h4></a>' +
         '<span class="badge badge-success">{{company}}</span> ' +
         '{{#console}}<span class="badge badge-warning">{{.}}</span> {{/console}} ' +
