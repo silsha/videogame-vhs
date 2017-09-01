@@ -81,7 +81,7 @@ header.row {
 }
 
 
-.badge-primary, .badge-success, .badge-warning  {
+.badge-primary, .badge-success, .badge-warning, .badge-danger  {
   background-color: transparent !important;
   text-transform: uppercase;
   font-weight: 70;
@@ -99,4 +99,8 @@ header.row {
 
 .badge-warning {
   color: #f0ad4e;
+}
+
+.badge-danger {
+  color: #d9534f;
 }
